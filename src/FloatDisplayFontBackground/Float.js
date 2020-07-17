@@ -4,7 +4,7 @@ import './Float.css';
 class Float extends Component {
     render() {
         return(
-            <div className='container'>
+            <div className='float-container'>
                     <body className='float-body'>
                         <header>
                             <h1>RESTAURANTS IN HAWAII</h1>
