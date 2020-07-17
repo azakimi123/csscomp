@@ -8,8 +8,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        {/* <BoxModel /> */}
-        <Float />
+        <BoxModel />
+        {/* <Float /> */}
       </div>
     )
   }
