@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import BoxModel from './BoxModel/BoxModel';
-import Float from './FloatDisplayFontBackground/Float';
+import BoxModel from './Components/BoxModel/BoxModel';
+import Float from './Components/FloatDisplayFontBackground/Float';
 
 
 
@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div>
         <BoxModel />
-        {/* <Float /> */}
+        <Float />
       </div>
     )
   }
