@@ -1,0 +1,14 @@
+
+//variables
+
+$size: 20vw;
+$primary: white;
+$secondary: black;
+
+
+//mixins
+
+@mixin page-view() {
+  width: 100vw;
+  height: 100vh;
+}

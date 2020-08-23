@@ -1,4 +1,7 @@
+@import '../../config.scss';
+
 .container{
+    @include page-view();
     display: flex;
     background-color: white;
 }
@@ -10,6 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .sub-box{
@@ -28,17 +32,19 @@
 }
 
 .img-1{
-    width: 475px;
+    width: 215px;
     padding: 5px;
     border-radius: 5px;
+    margin: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .img-2{
-    width: 475px;
+    width: 275px;
     margin-top: 25px;
     padding: 5px;
     border-radius: 5px;
+    margin: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -53,4 +59,19 @@
 .content{
     font-size: 25px;
     letter-spacing: 2px;
+}
+
+.numbers{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.number{
+    margin: 10px;
+}
+
+.box{
+    width: 300px;
+    height: 200px;
+    background-image: linear-gradient(to bottom right, red,pink, yellow);
 }

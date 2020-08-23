@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import BoxModel from './Components/BoxModel/BoxModel';
 import Float from './Components/FloatDisplayFontBackground/Float';
+import Aloha from './Components/Aloha/Aloha';
+
 
 
 
@@ -10,6 +12,7 @@ class App extends Component {
       <div>
         <BoxModel />
         <Float />
+        <Aloha />
       </div>
     )
   }
