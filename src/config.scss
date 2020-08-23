@@ -7,8 +7,19 @@ $secondary: black;
 
 
 //mixins
+@mixin hover-transform{
+    transition: all .3s ease-in-out;
+    transform: scale(1.5);
+    z-index: 2;
+}
 
 @mixin page-view() {
   width: 100vw;
   height: 100vh;
+}
+
+@mixin flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -9,7 +9,7 @@ class BoxModel extends Component {
           <section className='main-box'>
               <section className='sub-box'>
                   <h3 className='box-title'>Plants</h3>
-                  <span>Flex Wrap and Box Shadow:</span>
+                  <span className='skill' >Flex Wrap and Box Shadow:</span>
                   <img className='img-1' 
                     src='https://smartgardenguide.com/wp-content/uploads/2019/04/how-to-fertilize-houseplants-naturally-3.jpg'
                     alt='plants'/>

@@ -1,0 +1,26 @@
+@import '../../config.scss';
+
+.form-container{
+  @include page-view;
+  @include flex-center;
+}
+
+.form-box{
+  width: 300px;
+  height: 400px;
+  background: pink;
+  @include flex-center;
+  flex-direction: column;
+}
+
+.submit-button:disabled{
+  background: rgb(255, 105, 105);
+}
+
+.name-input{
+  margin: 5px;
+
+  &:focus{
+    background: rgb(165, 216, 165);
+  }
+}

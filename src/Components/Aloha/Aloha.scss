@@ -10,9 +10,16 @@
   align-items: center;
   justify-content: center;
 
-  p{
+  .skill{
     margin: 10px
+
+
   }
+
+  .skill:hover{
+    @include hover-transform;
+  }
+
 }
 
 .wrapper {
@@ -28,11 +35,12 @@
   background: $primary;
   color: $secondary;
   font-family: "Montserrat", sans-serif;
-  font-size: 15vw;
+  font-size: 250px;
   letter-spacing: 2vw;
   line-height: 30vh;
   margin: 0;
   mix-blend-mode: lighten;
+
 }
 
 @keyframes sliding-background {
