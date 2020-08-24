@@ -1,0 +1,19 @@
+@import '../../config.scss';
+
+.list-container{
+  @include page-view;
+  @include flex-center;
+}
+
+.nth-list{
+  font-size: 50px;
+
+  &:nth-child(odd) {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+}

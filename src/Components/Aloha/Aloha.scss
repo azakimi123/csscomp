@@ -24,11 +24,16 @@
 
 .wrapper {
   animation: sliding-background 40s linear infinite;
-  background: url("https://images.unsplash.com/photo-1496737018672-b1a6be2e949c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1491&q=80") no-repeat left / 120%;
+  // background: url("https://images.unsplash.com/photo-1496737018672-b1a6be2e949c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1491&q=80") no-repeat left / 120%;
+  background-image: linear-gradient(to bottom right, red,pink, yellow);
   height: 59.9vh;
   text-align: center;
   width: 80vw;
   border: 5px solid black;
+
+  &:hover{
+      background: url("https://images.unsplash.com/photo-1496737018672-b1a6be2e949c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1491&q=80") no-repeat left / 120%;
+  }
 }
 
 .title {
