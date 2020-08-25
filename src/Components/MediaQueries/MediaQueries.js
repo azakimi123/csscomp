@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './MediaQueries.scss';
 
 function MediaQueries() {
+
+  let [dropdownToggle, setDropdownToggle] = useState(false);
+
+  const handleToggle = () => {
+    setDropdownToggle(!dropdownToggle)
+}
+
   return(
     <div className='media-queries-container'>
-      <nav>
+      <nav className='desktop-nav'>
         <section className='nav-logo'>
           <p>Aaron Zakimi</p>
         </section>
@@ -14,6 +21,23 @@ function MediaQueries() {
           <li>Contact</li>
         </ul>
       </nav>
+      <section className='mobile-nav'>
+      <section className='mobile-nav-logo'>
+          <p>Aaron Zakimi</p>
+      </section>
+        <img className='nav-menu-icon' src='https://image.flaticon.com/icons/svg/545/545705.svg' alt='menu-icon' 
+          onClick={handleToggle}/>
+          {dropdownToggle
+          ? 
+              <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+              </ul>
+            
+          : null
+          }    
+      </section>
       <main>
         <section className='main-upper'>
           <p>WELCOME</p>
