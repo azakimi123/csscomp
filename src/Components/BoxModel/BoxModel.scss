@@ -1,9 +1,11 @@
 @import '../../config.scss';
 
-.container{
+.box-model-container{
     @include page-view();
     display: flex;
+    flex-direction: row;
     background-color: white;
+    overflow: auto;
 }
 
 .main-box{
@@ -46,14 +48,6 @@
     border-radius: 5px;
     margin: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.content-box{
-    width: 500px;
-    height: 520px;
-    margin-top: 130px;
-    margin-left: 75px;
-    /* background: green; */
 }
 
 .content{

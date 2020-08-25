@@ -5,7 +5,7 @@ class BoxModel extends Component {
   render() {
     return (
       <div>
-        <main className='container'>
+        <main className='box-model-container'>
           <section className='main-box'>
               <section className='sub-box'>
                   <h3 className='box-title'>Plants</h3>
@@ -28,9 +28,6 @@ class BoxModel extends Component {
                   <div className='bar-1'></div>
                   <div className='bar-1'></div>
               </section>
-          </section>
-          <section className='content-box'>
-              <p className='content'>Ac tortor vitae purus faucibus ornare suspendisse sed. Metus aliquam eleifend mi in. Magna eget est lorem ipsum dolor sit amet consectetur adipiscing. Magna eget est lorem ipsum. Quam pellentesque nec nam aliquam sem et tortor consequat. Arcu odio ut sem nulla pharetra diam. Morbi non arcu risus quis varius quam quisque.</p>
           </section>
           <span>Flex Direction: row-reverse =></span>
           <section className='numbers'>
