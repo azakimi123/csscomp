@@ -6,6 +6,7 @@ import Form from './Components/Form/Form';
 import List from './Components/List/List';
 import MediaQueries from './Components/MediaQueries/MediaQueries';
 import MediaTypes from './Components/MediaTypes/MediaTypes';
+import Auth from './Components/Auth/Auth';
 
 
 
@@ -14,6 +15,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Auth />
         {/* <BoxModel /> */}
         {/* <Float /> */}
         {/* <Aloha /> */}
@@ -21,7 +23,7 @@ class App extends Component {
         {/* <List /> */}
         {/* This has media queries, show in isolation */}
         {/* <MediaQueries /> */}
-        <MediaTypes />
+        {/* <MediaTypes /> */}
       </div>
     )
   }
