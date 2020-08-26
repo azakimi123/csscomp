@@ -5,6 +5,7 @@ import Aloha from './Components/Aloha/Aloha';
 import Form from './Components/Form/Form';
 import List from './Components/List/List';
 import MediaQueries from './Components/MediaQueries/MediaQueries';
+import MediaTypes from './Components/MediaTypes/MediaTypes';
 
 
 
@@ -13,13 +14,14 @@ class App extends Component {
   render() {
     return (
       <div>
-        {/* <BoxModel />
-        <Float />
-        <Aloha />
-        <Form />
-        <List /> */}
+        {/* <BoxModel /> */}
+        {/* <Float /> */}
+        {/* <Aloha /> */}
+        {/* <Form /> */}
+        {/* <List /> */}
         {/* This has media queries, show in isolation */}
-        <MediaQueries />
+        {/* <MediaQueries /> */}
+        <MediaTypes />
       </div>
     )
   }

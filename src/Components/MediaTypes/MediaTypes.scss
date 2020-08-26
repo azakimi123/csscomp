@@ -1,0 +1,41 @@
+@import '../../config.scss';
+
+.media-type-title2{
+  display: none;
+}
+
+.media-type-container{
+  text-align: center;
+}
+
+.media-type-box{
+  @include flex-center;
+}
+
+.media-type-article{
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  box-shadow: none;
+}
+
+@media print{
+  .media-type-title2{
+    display: inline;
+    font-weight: 600;
+  }
+
+.media-type-article{
+  color: blue;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+  .media-type-title{
+    display: none;
+  }
+
+
+}
