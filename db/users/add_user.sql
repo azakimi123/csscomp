@@ -7,6 +7,8 @@ INSERT INTO practice_users (
 ) VALUES (
     ${password},
     ${email},
-    ${profile_picture},
-    'false'
-);
+    ${username},
+    'https://image.flaticon.com/icons/svg/2948/2948035.svg',
+    FALSE
+)
+returning id, username, email, profile_picture;

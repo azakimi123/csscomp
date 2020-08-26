@@ -1,22 +1,23 @@
 import React, { useState, useContext } from 'react';
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { UserContext } from "../../context/UserContext";
 import axios from 'axios';
-import './Auth.scss';
+import './Register.scss';
 
-function Auth(props){
+
+function Register(props) {
 
   const history = useHistory();
 
- 
   const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [user, setUser] = useContext(UserContext);
 
 
-  const handleLogin = () => {
+  const handleRegister = () => {
     axios
-      .post("/auth/login", { email, password })
+      .post("/auth/register", { email, password, username})
       .then((res) => {
         setUser(res.data);
         history.push("/dashboard");
@@ -27,15 +28,14 @@ function Auth(props){
   return(
     <div>
       <section>
-        <h1>Login</h1>
+        <h1>Register</h1>
         <span>Email: </span><input value={email} onChange={e => setEmail(e.target.value)}/>
+        <span>Username: </span><input value={username} onChange={e => setUsername(e.target.value)}/>
         <span>Password: </span><input value={password} type='password' onChange={e => setPassword(e.target.value)}/>
-        <button onClick={handleLogin}>Login</button>
-        <Link to='/register'><button>Create Account</button></Link>
+        <button onClick={handleRegister}>Register</button>
       </section>
     </div>
   )
 }
 
-export default Auth;
-
+export default Register;

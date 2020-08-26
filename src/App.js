@@ -1,4 +1,6 @@
-import React, {Component} from 'react';
+import React, { useState } from 'react';
+import { UserContext }from './context/UserContext';
+import routes from './routes';
 import BoxModel from './Components/BoxModel/BoxModel';
 import Float from './Components/FloatDisplayFontBackground/Float';
 import Aloha from './Components/Aloha/Aloha';
@@ -7,15 +9,19 @@ import List from './Components/List/List';
 import MediaQueries from './Components/MediaQueries/MediaQueries';
 import MediaTypes from './Components/MediaTypes/MediaTypes';
 import Auth from './Components/Auth/Auth';
+import Nav from './Components/Nav/Nav';
 
 
 
+function App(props){
 
-class App extends Component {
-  render() {
+  const [user, setUser] = useState({});
+
     return (
       <div>
-        <Auth />
+        <UserContext.Provider value={[user, setUser]}>
+        <Nav />
+        {routes}
         {/* <BoxModel /> */}
         {/* <Float /> */}
         {/* <Aloha /> */}
@@ -24,9 +30,9 @@ class App extends Component {
         {/* This has media queries, show in isolation */}
         {/* <MediaQueries /> */}
         {/* <MediaTypes /> */}
+        </UserContext.Provider>
       </div>
     )
-  }
 }
 
 export default App;
