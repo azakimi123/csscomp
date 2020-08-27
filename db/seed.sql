@@ -6,3 +6,9 @@ CREATE TABLE practice_users (
     profile_picture VARCHAR(250),
     is_admin BOOLEAN
 );
+
+
+CREATE TABLE meme (
+    id SERIAL PRIMARY KEY,
+    image TEXT
+);

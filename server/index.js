@@ -3,6 +3,8 @@ const express = require("express");
 const session = require("express-session");
 const massive = require("massive");
 const authCtrl = require("./controllers/authCtrl");
+const memeCtrl = require("./controllers/memeCtrl");
+const middleware = require("./middleware/authMiddleware");
 
 
 const app = express();
@@ -32,10 +34,13 @@ app.use(
 
 app.use(express.json());
 
-//endpoints
+// authentication endpoints
 app.post('/auth/register', authCtrl.register);
 app.post('/auth/login', authCtrl.login);
 app.get('/auth/logout', authCtrl.logout);
+
+// meme endpoint
+app.get('/api/meme', middleware.isAdmin, memeCtrl.getMeme);
 
 
 app.listen(SERVER_PORT, () => {

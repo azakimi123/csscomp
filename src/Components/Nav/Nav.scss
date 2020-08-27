@@ -1,0 +1,26 @@
+
+
+@import '../../config.scss';
+
+nav{
+  width: 100vw;
+  height: 8vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .nav-logo{
+    margin-left: 20px;
+  }
+
+  .nav-links{
+    margin-right: 20px;
+
+    p{
+      &:hover{
+        cursor: pointer;
+        color: rgb(158, 158, 158);
+      }
+    }
+  }
+}

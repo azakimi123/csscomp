@@ -34,6 +34,7 @@ module.exports = {
 
         delete userExists[0].password;
         req.session.users = userExists[0];
+        // console.log(req.session)
         res.status(202).send(req.session.users);
     },
 
