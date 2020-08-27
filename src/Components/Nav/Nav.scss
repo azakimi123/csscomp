@@ -14,9 +14,14 @@ nav{
   }
 
   .nav-links{
+    width: 80vw;
     margin-right: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    // background: green;
+    
 
-    p{
+    li{
       &:hover{
         cursor: pointer;
         color: rgb(158, 158, 158);

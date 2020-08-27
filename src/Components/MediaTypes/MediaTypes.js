@@ -3,6 +3,7 @@ import './MediaTypes.scss';
 
 
 function MediaTypes(){
+  //printview media type
   return(
     <div className='media-type-container'>
       <h1>Media Types</h1>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
 import './MediaQueries.scss';
 
 function MediaQueries() {
@@ -16,7 +17,7 @@ function MediaQueries() {
           <p>Aaron Zakimi</p>
         </section>
         <ul className='nav-links'>
-          <li>Home</li>
+          <Link to='/dashboard'><li>Home</li></Link>
           <li>About</li>
           <li>Contact</li>
         </ul>
@@ -30,7 +31,7 @@ function MediaQueries() {
           {dropdownToggle
           ? 
               <ul>
-                <li>Home</li>
+                <Link to='/dashboard'><li>Home</li></Link>
                 <li>About</li>
                 <li>Contact</li>
               </ul>

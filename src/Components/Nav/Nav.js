@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { UserContext } from "../../context/UserContext";
-import { useLocation, useHistory } from "react-router-dom";
+import { Link, useLocation, useHistory } from "react-router-dom";
 import axios from 'axios';
 import './Nav.scss';
 
@@ -11,7 +11,7 @@ function Nav(props){
   const [user, setUser] = useContext(UserContext);
 
 
-  if (location.pathname === "/" || location.pathname === "/register"){
+  if (location.pathname === "/" || location.pathname === "/register" || location.pathname === "/media/queries"){
     return null;
   }
 
@@ -32,9 +32,16 @@ function Nav(props){
         <section className='nav-logo'>
           <p>COMP APP</p>
         </section>
-        <section className='nav-links'>
-          <p onClick={handleLogout}>logout</p>
-        </section>
+          <ul className='nav-links'>
+            <Link to='/boxModel'><li>Box Model/Flex</li></Link>
+            <Link to='/float'><li>Float Display</li></Link>
+            <Link to='/form'><li>Form</li></Link>
+            <Link to='/list'><li>List</li></Link>
+            <Link to='/media/queries'><li>Media Query</li></Link>
+            <Link to='/media/types'><li>Media Types</li></Link>
+            <Link to='/aloha'><li>Text Effects</li></Link>
+            <li onClick={handleLogout}>logout</li>
+          </ul>
       </nav>
     </div>
   )
